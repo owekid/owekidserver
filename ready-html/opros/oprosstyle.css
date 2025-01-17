@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    animation: slideIn 0.5s ease-out;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    animation: fadeInLabel 1s ease-out;
+}
+
+input, textarea, button {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #611313;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #421717;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.thank-you-message {
+    text-align: center;
+    font-size: 20px;
+    color: #28a745;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLabel {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
