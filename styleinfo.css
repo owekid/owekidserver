@@ -1,0 +1,66 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.resume-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация появления */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.fade-in:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.fade-in:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.fade-in:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.fade-in:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.fade-in:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+/* Ключевые кадры для анимации */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Стили кнопки */
+.AAA {
+    display: block;
+    margin: 30px auto 0;
+    background-color: #520e0e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.AAA:hover {
+    background-color: #640d0d;
+}
